@@ -7,10 +7,33 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    hot: [{'xh':1,'mc': '皇城老妈', 'src': '' },
+      {'xh':2,'mc': '蜀九香', 'src': ''},
+      {'xh': 3, 'mc': '老码头', 'src': ''},
+      {'xh': 4, 'mc': '大蓉和', 'src': ''}, 
+      { 'xh': 5, 'mc': '皇城老妈皇城老妈皇城老妈', 'src': ''},
+      {'xh': 6, 'mc': '皇城老妈', 'src': '' }],
+    result: [{ 'xh': 1, 'mc': '皇城老妈', 'src': '' },
+    { 'xh': 2, 'mc': '蜀九香', 'src': '' },
+    { 'xh': 3, 'mc': '老码头', 'src': '' },
+    { 'xh': 4, 'mc': '大蓉和', 'src': '' },
+    { 'xh': 5, 'mc': '皇城老妈皇城老妈皇城老妈', 'src': '' },
+    { 'xh': 6, 'mc': '皇城老妈', 'src': '' }]
   },
+  search(){
+    wx.navigateTo({
+      url: '../search/search'
+    });
+  },
+  goDetailPage(event){
+    let xh = event.target.dataset.xh;
+    wx.navigateTo({
+      url:`../detail/detail?xh=${xh}`
+    })
+  }
   //事件处理函数
-  bindViewTap: function() {
+ /* bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
@@ -50,5 +73,5 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  }*/
 })

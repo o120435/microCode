@@ -1,13 +1,41 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<view class='search-out'>
+  
+  <button class="search-bar" bindtap="search">
+    <image class='search-icon' src='../../img/search.png'></image>
+    搜索餐厅，立即排号
+  </button>
+</view>
+<view class="box-title">火爆餐厅，手机取号、远程排队、实时查进度</view>
+<view class="box">
+  <view class='item' wx:for="{{hot}}" wx:key="{{item.xh}}" data-xh="{{item.xh}}" bindtap='goDetailPage'>
+    <image src="{{item.src}}"  data-xh="{{item.xh}}"></image>
+    <text class='item-text'  data-xh="{{item.xh}}">{{item.mc}}</text>
   </view>
 </view>
+<view class="box-title">附近的餐厅</view>
+<view class="button-group">
+  <button>可手机取号</button>
+  <button>过号不作废</button>
+  <button>有等位优惠</button>
+</view>
+<view class="list" wx:for="{{result}}" wx:key="{{item.xh}}">
+  <view class="list-img">
+    <image src="{{item.src}}"></image>
+  </view>
+  <view class='list-content'>
+    <view class='list-content-header'>
+      <text class='list-content-title'>{{item.mc}}</text>
+      <text class='list-content-info' >￥60/人</text>
+      <text class='list-content-distance'>火锅 1.4km</text>
+    </view>
+    <view class='list-content-footer'>
+      <view class='list-state'>
+        <button class='list-state-btn'>排队</button>
+        <text class='list-state-txt'>当前排队状况</text>
+      </view>
+      <text class='list-text'>无需排队</text>
+    </view>    
+  </view>
+</view>
+

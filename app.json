@@ -1,12 +1,32 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/detail/detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#e91e63",
+    "navigationBarTitleText": "随心排",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#eeeeee"
+  },
+  "tabBar": {
+    "selectedColor": "red",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "排队",
+        "iconPath":"img/home1.png",
+        "selectedIconPath":"img/home.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "img/user1.png",
+        "selectedIconPath": "img/user.png"
+      }
+    ]
   }
 }

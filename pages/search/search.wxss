@@ -1,0 +1,41 @@
+/* pages/search/search.wxss */
+page{
+  background:#eeeeee;
+}
+.search-out{
+  padding:5px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+}
+.search-bar{
+  display: flex;
+  flex-direction:row;
+  justify-content:left;
+  align-items:center;
+  background:white;
+  height:25pt;
+  flex-grow:3;
+  text-align:left;
+  padding-left:5px;
+}
+.search-rec{
+  background:white;
+  height:25pt;
+  font-size:10pt;
+  line-height:25pt;
+  color: #888888;
+  padding-left:10px;
+  margin-top:1px;
+}
+.clear{
+  background:white;
+  height:25pt;
+  font-size:10pt;
+  line-height:25pt;
+  color: #888888;
+  padding-left:10px;
+  margin-top:1px;
+  text-align:center;
+}

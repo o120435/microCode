@@ -1,0 +1,13 @@
+<!--pages/search/search.wxml-->
+<view class='search-out'>
+  <button class='search-bar'>
+    <image src='../../img/search.png' style='width:30px;height:30px'></image>
+    <input confirm-type='search' auto-focus placeholder='搜索餐厅，立即排号' placeholder-style='font-size:10pt;'/>
+  </button>
+  <view style='flex-grow:1;text-align:center;font-size:12pt;'>搜索</view>
+</view>
+<view class='search-rec'>暂无搜索记录</view>
+<view class='search-rec'>暂无搜索记录</view>
+<view class='clear'>清空搜索记录</view>
+
+
