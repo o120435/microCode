@@ -162,3 +162,11 @@ page{
   color: #888888;
   padding: 5px;
 }
+.line{
+  margin-left:3px;
+  margin-right:3px;
+  width:4px;
+  height:11pt;
+  background:#e91e63;
+  display: inline-block;
+}

@@ -6,14 +6,14 @@
     搜索餐厅，立即排号
   </button>
 </view>
-<view class="box-title">火爆餐厅，手机取号、远程排队、实时查进度</view>
+<view class="box-title"><view class="line"></view>  火爆餐厅，手机取号、远程排队、实时查进度</view>
 <view class="box">
   <view class='item' wx:for="{{hot}}" wx:key="{{item.xh}}" data-xh="{{item.xh}}" bindtap='goDetailPage'>
     <image src="{{item.src}}"  data-xh="{{item.xh}}"></image>
     <text class='item-text'  data-xh="{{item.xh}}">{{item.mc}}</text>
   </view>
 </view>
-<view class="box-title">附近的餐厅</view>
+<view class="box-title"><view class="line"></view>附近的餐厅</view>
 <view class="button-group">
   <button>可手机取号</button>
   <button>过号不作废</button>
