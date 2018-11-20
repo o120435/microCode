@@ -7,7 +7,6 @@
   <view style='flex-grow:1;text-align:center;font-size:12pt;'>搜索</view>
 </view>
 <view class='search-rec'>暂无搜索记录</view>
-<view class='search-rec'>暂无搜索记录</view>
 <view class='clear'>清空搜索记录</view>
 
 
